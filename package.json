@@ -2,8 +2,11 @@
   "name": "bootstrap_con_sass",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": {  
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/prueba.scss css/estilo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
   },
   "author": "",
   "license": "ISC",
@@ -294,5 +297,13 @@
     "yargs": "^17.3.1",
     "yargs-parser": "^20.2.9"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelixPadillaS/desafioClase1213.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FelixPadillaS/desafioClase1213/issues"
+  },
+  "homepage": "https://github.com/FelixPadillaS/desafioClase1213#readme",
   "description": ""
 }
