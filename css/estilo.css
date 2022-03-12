@@ -1,26 +1,35 @@
-/* Prueba de funcionamiento de sass*/
+/* Uso de extend y mixins  */
+/* variables */
+/* Ejemplos usando Mixin */
+#titulo {
+  text-align: left;
+  color: black; }
+
 body {
-  background-color: lightblue;
-  text-align: center; }
+  background-color: white;
+  text-align: center;
+  color: black; }
+
+p, #navmenu, #footercenter, #parrafo, #carouselitem {
+  text-align: left;
+  color: black; }
 
 a {
   color: black;
   text-decoration: none; }
 
 #navmenu {
-  text-align: left; }
+  text-align: left;
+  color: black; }
 
 #footercenter {
-  text-align: center; }
+  text-align: center;
+  color: black; }
 
 #parrafo {
-  /*background-color: rgb(255, 255, 255);  */
   text-align: justify;
   height: 400px;
   overflow: auto; }
 
 #carouselitem {
   text-align: center; }
-
-p {
-  text-align: left; }
