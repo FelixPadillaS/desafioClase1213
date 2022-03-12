@@ -1,0 +1,50 @@
+/* Uso de extend y mixins  */
+
+@import "misvariables";
+
+/* Ejemplos usando Mixin */
+@mixin alineacionTextos ($jutificacion, $colorLetra) {
+  text-align: $jutificacion;
+  color: $colorLetra;
+}
+
+#titulo {
+  @include alineacionTextos ($izquierda, black); 
+}
+
+body {
+  background-color: $blanco;
+  @include alineacionTextos ($centrado, black); 
+}
+
+p {
+  @include alineacionTextos ($izquierda, black); 
+}
+
+a {
+  color: $negro;
+  text-decoration: $decoracion; }
+
+#navmenu {
+  @extend p;
+  @include alineacionTextos ($izquierda, black); 
+}
+
+#footercenter {
+  @extend p;
+  @include alineacionTextos ($centrado, black); 
+}
+
+#parrafo {
+  @extend p;
+  text-align: $justificado;
+  height: $altura;
+  overflow: $ajuste; }
+
+#carouselitem {
+  @extend p;
+  text-align: $centrado; }
+
+
+
+
