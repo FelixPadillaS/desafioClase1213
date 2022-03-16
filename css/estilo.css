@@ -10,21 +10,25 @@ body {
   text-align: center;
   color: black; }
 
-p, #navmenu, #footercenter, #parrafo, #carouselitem {
+p, #footercenter, #parrafo, #carouselitem {
   text-align: left;
-  color: black; }
+  color: black;
+  font-weight: normal; }
 
 a {
   color: black;
   text-decoration: none; }
 
 #navmenu {
+  /*@extend p;*/
   text-align: left;
-  color: black; }
+  color: black;
+  font-weight: bold; }
 
 #footercenter {
   text-align: center;
-  color: black; }
+  color: black;
+  font-weight: bold; }
 
 #parrafo {
   text-align: justify;
