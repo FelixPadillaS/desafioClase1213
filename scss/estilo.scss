@@ -18,7 +18,8 @@ body {
 }
 
 p {
-  @include alineacionTextos ($izquierda, black); 
+  @include alineacionTextos ($izquierda, black);
+  font-weight: normal; 
 }
 
 a {
@@ -26,13 +27,15 @@ a {
   text-decoration: $decoracion; }
 
 #navmenu {
-  @extend p;
-  @include alineacionTextos ($izquierda, black); 
+  /*@extend p;*/
+  @include alineacionTextos ($izquierda, black);
+  font-weight: bold; 
 }
 
 #footercenter {
   @extend p;
   @include alineacionTextos ($centrado, black); 
+  font-weight: bold; 
 }
 
 #parrafo {
@@ -44,7 +47,3 @@ a {
 #carouselitem {
   @extend p;
   text-align: $centrado; }
-
-
-
-
